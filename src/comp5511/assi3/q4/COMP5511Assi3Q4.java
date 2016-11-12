@@ -8,16 +8,19 @@ public class COMP5511Assi3Q4 {
       
       LinkedList Data = new LinkedList();  
       //insert data in the List
-      Data.add("6876543204");
-      Data.add("7876543203");
-      Data.add("8876543202");
-      Data.add("9876543201");
+      int x= 472945921;
+      for(int i=0; i < 100; i++){
+        Data.add(x);
+        x += 6631245;
+      }
+      
+  
       int n = Data.size();
      
      
         //print the initial sorted list
          for (int z=0; z<n; z++){
-         System.out.print(Data.get(z)+ "\n");}
+         System.out.print("ISBN: " + Data.get(z)+ "\n");}
          System.out.println();
          
         //possibility to simply use the API below 
@@ -37,7 +40,7 @@ public class COMP5511Assi3Q4 {
      
      //Print reverse sorted list
      for (int z=0; z<n; z++){
-         System.out.print(Data.get(z) + "\n");}
+         System.out.print("ISBN: "+Data.get(z) + "\n");}
     }
      
    
